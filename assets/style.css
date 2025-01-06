@@ -40,6 +40,7 @@ body {
 
 .social-link img {
 	width: 20px;
+	height: 20px;
 }
 
 #about {
@@ -69,7 +70,8 @@ body {
 
 .picture img {
 	width: 100%;
-
+	height: 450;
+	object-fit: cover;
 }
 #about-me {
 	flex: 2
@@ -104,9 +106,11 @@ body {
 	color: #fff;
 	background-color: #BEB45A;
 	border-radius:0 ;
+	cursor: pointer;
 }
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
+	cursor: pointer;
 }
 .item-column {
 	position: relative;
@@ -119,13 +123,15 @@ body {
 	padding-bottom: 100%;
 
 }
+
 .gallery-item {
 	position: absolute;
-	width: 100%;
-	height: 100%;
+	width: 95%;
+	height: 95%;
 	object-fit: cover;
-	padding: .5em;
+	cursor: pointer;
 }
+
 .mg-prev, .mg-next {
 	width: 30px;
 	height: 30px;
@@ -215,6 +221,7 @@ body {
 	flex : 2;
 
 }
+
 form {
 	display: flex;
 	flex-direction: column;
