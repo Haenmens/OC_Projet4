@@ -90,6 +90,7 @@ body {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
+	font-size: 16px;
 	width: 60%;
 }
 #about-me p {
@@ -158,7 +159,7 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-
+	font-size: 40px;
 }
 .quote__author {
 	font-family: Spectral;
@@ -212,6 +213,10 @@ body {
 #contact .container {
 	display: flex;
 }
+
+#contact__title {
+	font-size: 30px;
+}
 .picture.right::before {
 	content: ' ';
 	background-color: #BEB45A;
@@ -251,7 +256,12 @@ form textarea {
 	font-size: 1.2em;
 	margin-bottom: 20px;
 }
-input[type="submit"] {
+button[type="submit"] {
+	width: 100%;
+	background-color: transparent;
+	border: solid 1px;
+	height: 2.5em;
+	margin-bottom: 20px;
 	background-color: #BEB45A;
 	padding: .5em 1em
 }
