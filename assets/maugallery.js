@@ -152,6 +152,7 @@
           index = i ;
         }
       });
+      //Correction de la navigation entre les images en ajoutant une décrémentation à l'index
       next = imagesCollection[index - 1] || imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
@@ -193,6 +194,7 @@
           index = i;
         }
       });
+      //Correction de la navigation entre les images en ajoutant une incrémentation à l'index
       next = imagesCollection[index + 1] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
@@ -247,6 +249,7 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
+      //Correction de la non mise en surbrillance du filtre sélectionné en lui ajoutant la classe active
       $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
