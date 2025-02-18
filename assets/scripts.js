@@ -13,3 +13,26 @@ $(document).ready(function() {
         tagsPosition: 'top'
     });
 });
+
+function imageDeferLoading()
+{
+    const HQCarrousell1 = new Image();
+    const HQCarrousell2 = new Image();
+    const HQCarrousell3 = new Image();
+
+    HQCarrousell1.src = "assets/images/slider/hq-carrousel-1.jpg";
+    HQCarrousell2.src = "assets/images/slider/hq-carrousel-2.jpg";
+    HQCarrousell3.src = "assets/images/slider/hq-carrousel-3.jpg";
+
+    HQCarrousell1.onload = () => {
+        document.querySelector("#carrousel1").src = HQCarrousell1.src;
+    };
+    HQCarrousell2.onload = () => {
+        document.querySelector("#carrousel2").src = HQCarrousell2.src;
+    };
+    HQCarrousell3.onload = () => {
+        document.querySelector("#carrousel3").src = HQCarrousell3.src;
+    };
+}
+
+imageDeferLoading();
