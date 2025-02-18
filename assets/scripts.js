@@ -20,9 +20,9 @@ function imageDeferLoading()
     const HQCarrousell2 = new Image();
     const HQCarrousell3 = new Image();
 
-    HQCarrousell1.src = "assets/images/slider/hq-carrousel-1.jpg";
-    HQCarrousell2.src = "assets/images/slider/hq-carrousel-2.jpg";
-    HQCarrousell3.src = "assets/images/slider/hq-carrousel-3.jpg";
+    HQCarrousell1.src = "assets/images/slider/hq-carrousel-1.webp";
+    HQCarrousell2.src = "assets/images/slider/hq-carrousel-2.webp";
+    HQCarrousell3.src = "assets/images/slider/hq-carrousel-3.webp";
 
     HQCarrousell1.onload = () => {
         document.querySelector("#carrousel1").src = HQCarrousell1.src;
